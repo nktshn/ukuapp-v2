@@ -1,0 +1,19 @@
+@import 'variables';
+
+.app {
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: $transition;
+    &:active {
+        opacity: $active-opacity
+    }
+    &:hover {
+        opacity: $hover-opacity;
+    }
+}

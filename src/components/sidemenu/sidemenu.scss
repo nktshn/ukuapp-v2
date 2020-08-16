@@ -1,0 +1,21 @@
+@import './../../variables';
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    min-height: 100vh;
+    
+    font-size: $t-small;
+    border-right: 1px solid $borderColor;
+    background-color: $gray;
+    
+    .nav-item {
+        background-color: $lightGray;
+        padding: 20px;
+
+        &:hover {
+            opacity: $hover-opacity;
+        }
+    }
+}
