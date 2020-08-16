@@ -2,16 +2,17 @@ import React from "react";
 import { MenuItem } from "./menu-item.type";
 import { Link } from "react-router-dom";
 import './sidemenu.scss';
+import routes from "../../consts/routes";
 
 export default function SideMenu() {
     const menuItems: MenuItem[] = [
         {
             title: 'Neck',
-            link: 'neck',
+            link: routes.neck
         },
         {
             title: 'Transposing',
-            link: 'transposing',
+            link: routes.transposing
         },
     ];
     return (
